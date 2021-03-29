@@ -3,6 +3,7 @@ class StudentsController < ApplicationController
   
   def index
     @students = Student.all
+    redirect_to students_path
   end
 
   def show
